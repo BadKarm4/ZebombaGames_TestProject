@@ -110,8 +110,6 @@ public class GameplayManager : MonoBehaviour
         {
             RemoveOverflowCircle(circle);
         }
-
-        Debug.Log($"Шарик был добавлен в {freeRow},{column}");
     }
 
     private async UniTask CheckMatchesLoop()
