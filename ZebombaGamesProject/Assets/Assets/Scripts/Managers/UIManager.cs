@@ -73,6 +73,8 @@ public class UIManager : MonoBehaviour
     {
         gameOverPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+
+        GameplayManager.Instance.ReturnToMainMenu();
     }
 
     private void CloseZoomInOutTutorial()

@@ -13,6 +13,13 @@ public class CircleInMainMenu : MonoBehaviour
         rb.linearVelocity = dir * 3f;
     }
 
+    private void OnEnable()
+    {
+        Vector2 dir = Random.insideUnitCircle.normalized;
+
+        rb.linearVelocity = dir * 3f;
+    }
+
     private void FixedUpdate()
     {
         Vector2 velocity = rb.linearVelocity.normalized * 3f;
